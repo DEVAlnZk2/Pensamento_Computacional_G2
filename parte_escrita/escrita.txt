@@ -1,0 +1,148 @@
+Criação da ideia:
+Qual será a ideia principal do trabalho? 
+- Criar um sistema de vigilância que detecta a aproximação de pessoas ou objetos através de um sensor ultrassônico e exibe mensagens de alerta em um display LCD.
+
+Como essa ideia surgiu? 
+- A ideia surgiu da observação de sistemas de segurança utilizados em residências e empresas para monitorar áreas de acesso.
+
+Por que a dupla escolheu essa proposta? 
+- Porque utiliza os componentes disponíveis, é útil no dia a dia e permite aplicar conceitos de programação e pensamento computacional.
+
+Qual situação, problema ou necessidade será trabalhada? 
+- A necessidade de monitorar a aproximação de pessoas ou objetos em uma determinada área.
+
+O que a dupla pretende criar ao final? 
+- Um protótipo funcional capaz de medir distância e emitir alertas com LEDs
+
+Descrição da ideia inicial:
+ O sensor ultrassônico medirá continuamente a distância à frente dele. Quando um objeto estiver próximo, o LED vermelho irá acender, somente se apagará quando o objeto for retirado de um raio entre 1 e 335 cm.
+
+Definição do problema ou necessidade:
+O que precisa ser resolvido, melhorado ou representado? 
+- Representa um sistema simples de monitoramento e segurança.
+
+Quem poderia utilizar ou se beneficiar desta solução? 
+- Moradores, empresas, escolas ou qualquer pessoa interessada em monitorar acessos.
+
+Por que essa solução faria sentido? 
+- Porque permite identificar aproximações de forma automática.
+
+O que aconteceria se essa solução fosse aplicada na prática? 
+- Ela ajudaria a alertar usuários sobre movimentações próximas.
+
+Descrição do problema ou necessidade: 
+Monitorar uma área sem necessidade de observação constante por uma pessoa.
+
+Planejamento da solução:
+O que a solução deverá fazer? 
+- Detectar objetos e informar sua proximidade.
+
+Quais informações serão necessárias para ela funcionar? 
+- A distância medida pelo sensor ultrassônico.
+
+Quais ações deverão acontecer?
+-> Medir distância.
+
+-> Processar o valor.
+
+-> Ligar LEDs: Quando um objeto for detectado (vermelho) e quando ele não tiver nada no raio dele (Verde).
+
+Quais decisões a solução precisará tomar? 
+- Verificar se a distância é menor que a distância de segurança definida.
+
+Qual será o resultado esperado? 
+- Alertar quando houver aproximação.
+
+Funcionamento da solução:
+O sensor mede continuamente a distância. Caso um objeto seja detectado entre 1cm a 335cm, o LED vermelho será aceso enquanto o LED verde irá se apagar. Caso o objeto saia dentre esses valores, o LED vermelho irá se apagar enquanto o LED ficará aceso. 
+
+Decomposição:
+1. Montagem do circuito.
+2. Configuração do código.
+3. Configuração do sensor ultrassônico.
+4. Leitura da distância.
+5. Processamento da informação.
+6. Exibição da mensagem.
+7. Testes e ajustes.
+
+
+6. Reconhecimento de padrões:
+
+Existem ações repetidas? 
+- Sim, a medição da distância ocorre continuamente.
+
+Existem etapas que seguem uma sequência? 
+- Sim. Medir → Processar → Exibir.
+
+Existem situações semelhantes que podem usar a mesma lógica? 
+- Sim. Alarmes, sensores de estacionamento e portas automáticas.
+
+Alguma parte da solução pode ser reaproveitada? 
+- Sim. A lógica de medição e alerta.
+
+Padrões encontrados:
+ A leitura e análise da distância são repetidas constantemente.
+
+Abstração:
+O que é indispensável para a solução funcionar?
+
+-> Sensor ultrassônico.
+
+-> LEDs.
+
+-> Servo Motor
+
+-> Critério de alerta.
+
+O que pode ficar de fora nesta primeira versão? 
+- Alarmes sonoros, envio de mensagens ou armazenamento de dados.
+
+Quais elementos precisam aparecer na simulação? 
+- Leitura da distância e exibição do alerta.
+
+Quais detalhes podem ser melhorados apenas depois? 
+- Adicionar buzzer, LCD ou conexão com internet e melhorias nas mensagens.
+
+Elementos essenciais da solução: Sensor, LEDs, placa de ensaio e código.
+
+
+Algoritmo:
+1. Iniciar sistema.
+2. Configurar código e LEDs.
+3. Configurar sensor ultrassônico.
+4. Medir distância.
+5. Se distância menor que 335 cm:
+  LED Vermelho ALTO	
+	LED Verde BAIXO
+6. Senão:
+  LED Vermelho BAIXO
+  LED Verde ALTO
+7. Repetir o processo continuamente.
+
+Simulação e Protótipo:
+O que será simulado: Um sistema de vigilância que detecta aproximação de objetos.
+
+O que a dupla conseguiu iniciar hoje: Montagem do circuito e desenvolvimento inicial do código para leitura da distância + função dos LEDs.
+
+
+Testes e melhorias:
+A simulação funcionou como esperado? 
+- Sim, o sensor consegue identificar objetos próximos.
+
+O que deu certo? 
+- Leitura da distância e exibição das mensagens.
+
+O que precisa ser corrigido? 
+- Ajuste da distância de alerta para maior precisão.
+
+O que pode ser melhorado? 
+- Adicionar buzzer ou LCD para reforçar o aviso.
+
+A ideia inicial precisou ser modificada? 
+- Não significativamente.
+
+Registro dos testes e melhorias: Foram realizados testes com diferentes distâncias para verificar o funcionamento do sistema.
+
+11. Conclusão final da dupla:
+
+Durante o desenvolvimento do trabalho aprendemos como aplicar os conceitos de pensamento computacional na criação de uma solução tecnológica. A decomposição ajudou a dividir o projeto em etapas menores, enquanto o algoritmo permitiu organizar a lógica do sistema. O protótipo funcionou conforme esperado, detectando objetos próximos e exibindo mensagens de alerta no LED. Em uma próxima versão, poderíamos adicionar alarmes sonoros, LCD e novas funcionalidades para tornar o sistema mais completo e eficiente.
